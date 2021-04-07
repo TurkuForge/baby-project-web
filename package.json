@@ -1,6 +1,6 @@
 {
   "name": "baby-project-web",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "dev": "vite",
