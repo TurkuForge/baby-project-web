@@ -4,10 +4,10 @@
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "dev": "vite",
-    "format": "prettier . --check",
-    "format:fix": "prettier . --write",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "format": "prettier . --check --ignore-path .gitignore",
+    "format:fix": "prettier . --write --ignore-path .gitignore",
+    "lint": "eslint . --ignore-path .gitignore",
+    "lint:fix": "eslint . --fix --ignore-path .gitignore",
     "serve": "vite preview"
   },
   "dependencies": {
