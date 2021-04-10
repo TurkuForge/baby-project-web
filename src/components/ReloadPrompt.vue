@@ -14,8 +14,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
 import { useRegisterSW } from "virtual:pwa-register/vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ReloadPrompt",
@@ -27,7 +27,7 @@ export default defineComponent({
       needRefresh.value = false;
     };
 
-    return { offlineReady, needRefresh, updateServiceWorker, close };
+    return { close, needRefresh, offlineReady, updateServiceWorker };
   },
 });
 </script>
