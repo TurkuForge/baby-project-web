@@ -1,10 +1,21 @@
 <template>
   <div id="nav">
+    <ReloadPrompt />
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
 </template>
+
+<script>
+import { defineComponent } from "vue";
+import ReloadPrompt from "@/components/ReloadPrompt.vue";
+
+export default defineComponent({
+  name: "App",
+  components: { ReloadPrompt },
+});
+</script>
 
 <style>
 #app {
