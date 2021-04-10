@@ -13,23 +13,15 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { useRegisterSW } from "virtual:pwa-register/vue";
-import { defineComponent } from "vue";
 
-export default defineComponent({
-  name: "ReloadPrompt",
-  setup() {
-    const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW();
+const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW();
 
-    const close = async () => {
-      offlineReady.value = false;
-      needRefresh.value = false;
-    };
-
-    return { close, needRefresh, offlineReady, updateServiceWorker };
-  },
-});
+const close = async () => {
+  offlineReady.value = false;
+  needRefresh.value = false;
+};
 </script>
 
 <style scoped>

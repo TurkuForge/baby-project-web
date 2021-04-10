@@ -15,6 +15,15 @@ module.exports = {
       // List of file extensions to lint.
       files: "**/*.{js,ts,vue}",
     },
+    {
+      // Remove when `<setup script>` works with ESLint.
+      // https://github.com/vuejs/eslint-plugin-vue/issues/1248
+      files: "**/*.vue",
+      rules: {
+        "@typescript-eslint/no-unused-vars": "off",
+        "no-unused-vars": "off",
+      },
+    },
   ],
   parserOptions: {
     parser: "@typescript-eslint/parser",

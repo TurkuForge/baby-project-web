@@ -7,14 +7,8 @@
   <router-view />
 </template>
 
-<script>
+<script lang="ts" setup>
 import ReloadPrompt from "@/components/ReloadPrompt.vue";
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "App",
-  components: { ReloadPrompt },
-});
 </script>
 
 <style>
