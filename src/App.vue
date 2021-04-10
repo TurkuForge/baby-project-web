@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
 import ReloadPrompt from "@/components/ReloadPrompt.vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "App",
