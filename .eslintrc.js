@@ -13,7 +13,7 @@ module.exports = {
   overrides: [
     {
       // List of file extensions to lint.
-      files: "**/*.{js,ts,vue}",
+      files: "**/*.{js,jsx,ts,tsx,vue}",
     },
     {
       // Remove when `<setup script>` works with ESLint.
